@@ -1,4 +1,4 @@
-## How to Connect
+# How to Connect
 
 port: 2220
 
@@ -13,7 +13,7 @@ path: bandit.labs.overthewire.org
 username: bandit0
 passwd: bandit0
 
-#### Bandit 1
+### Bandit 1
 
     cat readme
 
@@ -21,7 +21,7 @@ username: bandit1
 
 passwd: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 
-#### Bandit 2
+### Bandit 2
 
 Specify the full location of the file using:
 
@@ -31,7 +31,7 @@ username: bandit2
 
 passwd: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
 
-#### Bandit 3
+### Bandit 3
 
 username: bandit3
 
