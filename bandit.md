@@ -25,7 +25,7 @@ Specify the full location of the file, as follows:
     cat ./-
 
 username: bandit2
-
+<br/>
 passwd: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
 
 ### Bandit 3
