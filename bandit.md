@@ -3,25 +3,23 @@ Connect via port 2220 using the bandit0 username at path bandit.labs.overthewire
 
     ssh -p 2220 bandit0@bandit.labs.overthewire.org
 
-### Bandit 0
+### Bandit Level 0 -> Level 1
 Username and password are given as bandit0.
 
-### Bandit 1
 Using the ```cat``` command will concatenate files and print on the standard output. The ```ls``` command will list directory contents. ```man ls``` will provide access to the manpage where there are several important OPTIONS available. While not needed here, the following will be important:
 
     -a, --all           //does not ignore entries with .
     -l                  //use a long listing format
     -al                 //combine both OPTIONS
 
+### Bandit Level 1 -> Level 2
+username: bandit1</br>
 passwd: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 
-### Bandit 2
-Specify the full location of the file, as follows:
+Using the ```pwd``` command we get the location of our current directory. Attempting to use ```cat -``` will not do much since the '-' character is a special character for providing argumets. The prefix ```./``` should solve the problem as it clarify that the file is in the current directory.
 
-    cat ./-
-
-username: bandit2
-<br/>
+### Bandit Level 2 -> Level 3
+bandit2</br>
 passwd: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
 
 ### Bandit 3
