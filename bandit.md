@@ -4,19 +4,15 @@ Connect via port 2220 using the bandit0 username at path bandit.labs.overthewire
     ssh -p 2220 bandit0@bandit.labs.overthewire.org
 
 ### Bandit 0
-Username and password are given.
-
-username: bandit0
-<br/>
-passwd: bandit0
+Username and password are given as bandit0.
 
 ### Bandit 1
-Use the ```cat``` argument to read ```readme``` file.
+Using the ```cat``` command will concatenate files and print on the standard output. The ```ls``` command will list directory contents. ```man ls``` will provide access to the manpage where there are several important OPTIONS available. While not needed here, the following will be important:
 
-    cat readme
+    -a, --all           //does not ignore entries with .
+    -l                  //use a long listing format
+    -al                 //combine both OPTIONS
 
-username: bandit1
-<br/>
 passwd: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 
 ### Bandit 2
@@ -69,9 +65,9 @@ passwd: DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 
 ### Bandit 
 
-username: bandit
+username: bandit7
 <br/>
-passwd: 
+passwd: HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
 
 ### Bandit 
 
