@@ -51,3 +51,20 @@ Remember that the '!' exclamation point also means 'not'.
 ### Bandit Level 6 => 7
 username: bandit6
 passwd: DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+The password is saved somewhere on the server and has several new properties. Again, the ```find``` command is one way to find the file that matches all the properties. The following OPTIONS will be helpful to lookup:
+
+    -group gname            //file belongs to group gname (numeric group ID allowed)
+    -user uname             //file is owned by user uname (numberic user ID allowed)
+    -size n                 //file uses 'n' units of space, rounding up
+
+While this will be enough to find the password, there will be a lot of extra information that would be nice to filter out. In this case it is worthwhile understanding what ```2>/dev/null``` does.
+
+    > file                  //redirects stdout to file
+    1> file                 //redirects stdout to file
+    2> file                 //redirects stderr to file
+
+### Bandit Level 7 => 8
+username: bandit7
+passwd: HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+
