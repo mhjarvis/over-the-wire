@@ -110,3 +110,12 @@ Solution:
 Username: bandit8</br>
 Password: cvX2JJa4CFALtqS87jk27qwqGhBM9plV
 
+The ```sort``` command sorts lines of text files and is used as ```sort [OPTION]... [FILE]...```. The ```uniq``` command allow you to report or omit repeated lines.
+
+Solution:
+
+    sort data.txt | uniq -u
+
+### Bandit Level 9 => 10
+Username: bandit9
+Password: UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
