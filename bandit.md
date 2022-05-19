@@ -4,25 +4,43 @@ Connect via port 2220 using the bandit0 username at path bandit.labs.overthewire
     ssh -p 2220 bandit0@bandit.labs.overthewire.org
 
 ### Bandit Level 0 => Level 1
-Username and password are given as bandit0.
+Username: bandit0
+Password: bandit0
 
-Using the ```cat``` command will concatenate files and print on the standard output. The ```ls``` command will list directory contents. ```man ls``` will provide access to the manpage where there are several important OPTIONS available. While not needed here, the following will be important:
+The ```cat``` command will concatenate files and print on the standard output. The ```ls``` command will list directory contents. ```man ls``` will provide access to the manpage where there are several important OPTIONS available. While not needed here, the following OPTIONS are important to know when using the ```ls``` command:
 
     -a, --all           //does not ignore entries with .
     -l                  //use a long listing format
     -al                 //combine both OPTIONS
 
-### Bandit Level 1 => Level 2
-username: bandit1</br>
-passwd: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+Solution: 
 
-Using the ```pwd``` command we get the location of our current directory. Attempting to use ```cat -``` will not do much since the '-' character is a special character for providing argumets. The prefix ```./``` should solve the problem as it clarify that the file is in the current directory.
+    cat readme
+
+### Bandit Level 1 => Level 2
+Username: bandit1</br>
+Password: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+The ```pwd``` command prints the location of the current directory. Attempting to use ```cat -``` will not do much since the '-' character is a special character for providing argumets. The prefix ```./``` should solve the problem as it clarify that the file is in the current directory.
+
+Solution:
+
+    cat ./-
 
 ### Bandit Level 2 => Level 3
-username: bandit2</br>
-passwd: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+Username: bandit2</br>
+Password: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
 
-The password is stored in a file with spaces in the filename. Again, ```cat``` alone will not work, as each blankspace creates a new argument. Using quotations or escaping the spaces will work at reading the file. 
+The command ```cat``` alone will not work, as each blank space creates a new argument. Using quotations or escaping the spaces will reference the words as one file name.
+
+Solution:
+
+    cat "spaces in this filename"
+
+
+
+
+
 
 ### Bandit Level 3 => 4
 username: bandit3</br>
@@ -37,7 +55,7 @@ passwd: pIwrPrtPN36QITSp3EQaw936yaFoFgAB
 The password is in the only human-readable file in the inhere directory. The ```file``` command will be easiest way to go about finding which file contains the password. 
 
 ### Bandit Level 5 => 6
-username: bandit5
+username: bandit5</br>
 passwd: koReBOKuIDDepwhWk7jZC0RTdopnAYKh
 
 The ```find``` command will be most useful in this instance. The following OPTIONS will be helpful: 
@@ -49,7 +67,7 @@ The ```find``` command will be most useful in this instance. The following OPTIO
 Remember that the '!' exclamation point also means 'not'. 
 
 ### Bandit Level 6 => 7
-username: bandit6
+username: bandit6</br>
 passwd: DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 
 The password is saved somewhere on the server and has several new properties. Again, the ```find``` command is one way to find the file that matches all the properties. The following OPTIONS will be helpful to lookup:
@@ -65,6 +83,11 @@ While this will be enough to find the password, there will be a lot of extra inf
     2> file                 //redirects stderr to file
 
 ### Bandit Level 7 => 8
-username: bandit7
+username: bandit7</br>
 passwd: HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
 
+    grep millionth data.txt
+
+### Bandit Level 8 => 9
+username: bandit8</br>
+passwd: cvX2JJa4CFALtqS87jk27qwqGhBM9plV
