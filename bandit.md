@@ -128,4 +128,13 @@ Solution:
 
 ### Bandit Level 10 => 11
 Username: bandit10
-Password: 
+Password: truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+
+The ```base64``` command will encode/decode data and print to standard output. Use in the form ```base64 [OPTION]... [FILE]```.
+
+    base64 -d data.txt
+
+### Bandit Level 11 => 12
+Username: bandit11
+Password: IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+
