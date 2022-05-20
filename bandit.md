@@ -119,3 +119,13 @@ Solution:
 ### Bandit Level 9 => 10
 Username: bandit9
 Password: UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+
+The ```strings``` command will print the sequences of printable characters in files. Used in conjunction with ```grep```, results can be filtered further.
+
+Solution:
+
+    strings -d data.txt | grep ==
+
+### Bandit Level 10 => 11
+Username: bandit10
+Password: 
