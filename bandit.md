@@ -138,3 +138,16 @@ The ```base64``` command will encode/decode data and print to standard output. U
 Username: bandit11
 Password: IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
 
+The ```tr``` command will translate or delete characters using ```tr [OPTION]... SET [SET2]```. Piping will be required for both  lower-case and upper-case letters.
+
+    tr '[a-z]' '[n-za-m]'           //input will be translated to the matching position
+                                    //in the output set
+                                    //'a' becomes 'n', 'b' becomes 'o'
+
+Solution:
+
+    cat data.txt | tr '[a-z]' '[n-za-m]' | tr '[A-Z]' '[N-ZA-M]'
+
+### Bandit Level 12 => 13
+Username: bandit12
+Password: 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
